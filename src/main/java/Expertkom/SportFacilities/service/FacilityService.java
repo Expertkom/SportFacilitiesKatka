@@ -36,6 +36,7 @@ public class FacilityService {
     }
     public Facility registerFacilities(UserDto userDto) {
         log.info("#FA&fa01: registerFacility  called");
+        return null;
     }
 
 }

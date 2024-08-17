@@ -4,7 +4,6 @@ package Expertkom.SportFacilities.controller;
 import Expertkom.SportFacilities.model.User;
 import Expertkom.SportFacilities.dto.UserDto;
 import Expertkom.SportFacilities.dto.UserRegisterDto;
-
 import Expertkom.SportFacilities.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
