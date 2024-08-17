@@ -30,6 +30,11 @@ public class FacilityController {
     }
 
 
+    public Facility facility (){
+        return facilityService;
+    }
+
+
     @GetMapping()
     public List<FacilityDto> getAllFacilities() {
         log.info("FA&fa01: getAllFacilities called");
