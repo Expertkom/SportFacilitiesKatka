@@ -47,18 +47,18 @@ public class User {
     @DateTimeFormat(pattern = "dd-MM-yyyy")
     private Date userUpdatedAt;
 
-//    @NotBlank
-//    @NotEmpty
-//    @Length
-//    @Size(max = 100)
-//    private String userStreet;
-//
-//    @NotBlank
-//    @Size(max = 50)
-//    private String userCity;
-//
-//    @NotBlank
-//    @Size(max = 10)
-//    private String userZipCode;
+   @NotBlank
+    @NotEmpty
+    @Length
+    @Size(max = 100)
+    private String userStreet;
+
+    @NotBlank
+    @Size(max = 50)
+    private String userCity;
+
+    @NotBlank
+    @Size(max = 10)
+    private String userZipCode;
 
 }

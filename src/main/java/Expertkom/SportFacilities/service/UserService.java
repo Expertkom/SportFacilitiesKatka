@@ -47,12 +47,17 @@ public class UserService {
 
 
         user.setPasswordHash(userRegisterDto.getPassword());
-//        user.setEmail(userRegisterDto.getEmail());
+        user.setUserEmail(userRegisterDto.getEmail());
         user.setUsername(userRegisterDto.getUsername());
+        user.setUserPhone(userRegisterDto.getPhone());
+        user.setUserStreet(userRegisterDto.getStreet());
+        user.setUserCity(userRegisterDto.getCity());
+        user.setUserZipCode(userRegisterDto.getZipCode());
 
         UserRole ur = userRoleService.getById(userRegisterDto.getRoleId());
         user.setRoleId(ur);
-//        user.setCreatedAt(new Date());
+        user.setUserCreatedAt(new Date());
+        user.setUserUpdatedAt(new Date());
 
 
         log.info("#US&ru02: user created, user={}", user);
