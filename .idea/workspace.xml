@@ -4,18 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39f30788-af1e-4e96-993c-b47399821c14" name="Changes" comment="init">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Expertkom/SportFacilities/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Expertkom/SportFacilities/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Expertkom/SportFacilities/dto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Expertkom/SportFacilities/dto/UserDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Expertkom/SportFacilities/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Expertkom/SportFacilities/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Expertkom/SportFacilities/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Expertkom/SportFacilities/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Expertkom/SportFacilities/service/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Expertkom/SportFacilities/service/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Expertkom/SportFacilities/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Expertkom/SportFacilities/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Expertkom/SportFacilities/dto/UserDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Expertkom/SportFacilities/dto/UserDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Expertkom/SportFacilities/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Expertkom/SportFacilities/model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Expertkom/SportFacilities/service/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Expertkom/SportFacilities/service/UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Expertkom/SportFacilities/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Expertkom/SportFacilities/service/UserService.class" afterDir="false" />
+    <list default="true" id="39f30788-af1e-4e96-993c-b47399821c14" name="Changes" comment="funguje ted postman&#10;get user">
+      <change beforePath="$PROJECT_DIR$/target/classes/Expertkom/SportFacilities/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Expertkom/SportFacilities/controller/UserController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +124,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724515353563</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="funguje ted postman&#10;get user">
+      <option name="closed" value="true" />
+      <created>1724523773056</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1724523773057</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -150,6 +148,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="funguje ted postman&#10;get user" />
+    <option name="LAST_COMMIT_MESSAGE" value="funguje ted postman&#10;get user" />
   </component>
 </project>
