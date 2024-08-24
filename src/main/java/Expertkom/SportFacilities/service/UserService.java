@@ -5,14 +5,13 @@ import Expertkom.SportFacilities.dto.UserRegisterDto;
 import Expertkom.SportFacilities.model.User;
 import Expertkom.SportFacilities.model.UserRole;
 import Expertkom.SportFacilities.repository.UserRepository;
-import Expertkom.SportFacilities.repository.UserRolesRepository;
+import Expertkom.SportFacilities.repository.UserRoleRepository;
 
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 

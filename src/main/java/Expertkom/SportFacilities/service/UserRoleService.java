@@ -1,16 +1,16 @@
 package Expertkom.SportFacilities.service;
 
 import Expertkom.SportFacilities.model.UserRole;
-import Expertkom.SportFacilities.repository.UserRolesRepository;
+import Expertkom.SportFacilities.repository.UserRoleRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
 public class UserRoleService {
-    private final UserRolesRepository userRoleRepository;
+    private final UserRoleRepository userRoleRepository;
 
-    public UserRoleService(UserRolesRepository userRoleRepository) {
+    public UserRoleService(UserRoleRepository userRoleRepository) {
         this.userRoleRepository = userRoleRepository;
     }
 
