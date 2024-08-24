@@ -13,31 +13,25 @@ import java.util.List;
 
 @Slf4j
 @RestController
-//request mapping bude pro webovky, možná
 @RequestMapping("/api/v1/users")
-
 public class UserController {
 
     private final UserService userService;
 
     @Autowired
     public UserController(UserService userService) {
-
         this.userService = userService;
     }
 
-    @PostMapping()
-
     //Dto specialni objekty pro posilani dat- budou davat takzvane nalepky
+    @PostMapping()
     public User registerUser(@RequestBody UserRegisterDto userRegisterDto){
-
         log.info("UC&ru01: registerUser called");
-
         return userService.registrUser(userRegisterDto);
     }
 
     @GetMapping()
-    public List<UserDto> getAllUser(){
+    public List<UserDto> getAllUser() {
         log.info("UC&ru01: getAllUser called");
         return userService.getAll();
 

@@ -31,34 +31,34 @@ public class User {
 
     @NotBlank
     @Size(max = 100)
-    private String email;
+    private String userEmail;
 
     @NotBlank
     @Size(max = 20)
-    private String phone;
+    private String userPhone;
 
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "roleId", referencedColumnName = "roleId")
     private UserRole roleId;
 
     @DateTimeFormat(pattern = "dd-MM-yyyy")
-    private Date createdAt;
+    private Date userCreatedAt;
 
     @DateTimeFormat(pattern = "dd-MM-yyyy")
-    private Date updateAt;
+    private Date userUpdatedAt;
 
-    @NotBlank
-    @NotEmpty
-    @Length
-    @Size(max = 100)
-    private String userStreet;
-
-    @NotBlank
-    @Size(max = 50)
-    private String userCity;
-
-    @NotBlank
-    @Size(max = 10)
-    private String userZipCode;
+//    @NotBlank
+//    @NotEmpty
+//    @Length
+//    @Size(max = 100)
+//    private String userStreet;
+//
+//    @NotBlank
+//    @Size(max = 50)
+//    private String userCity;
+//
+//    @NotBlank
+//    @Size(max = 10)
+//    private String userZipCode;
 
 }
