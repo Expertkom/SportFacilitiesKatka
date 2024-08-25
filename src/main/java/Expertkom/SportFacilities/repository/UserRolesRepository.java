@@ -1,9 +1,9 @@
 package Expertkom.SportFacilities.repository;
 
-import Expertkom.SportFacilities.model.UserRole;
+import Expertkom.SportFacilities.model.UserRoles;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface UserRoleRepository extends JpaRepository<UserRole, Integer> {
+public interface UserRolesRepository extends JpaRepository<UserRoles, Integer> {
 }

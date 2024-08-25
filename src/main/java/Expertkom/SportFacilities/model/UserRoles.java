@@ -12,7 +12,7 @@ import org.hibernate.validator.constraints.Length;
 @Table(name= "user_roles")
 @Data
 
-public class UserRole {
+public class UserRoles {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

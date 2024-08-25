@@ -1,13 +1,13 @@
 package Expertkom.SportFacilities.service;
 
-import Expertkom.SportFacilities.dto.UserDto;
-import Expertkom.SportFacilities.model.User;
+import Expertkom.SportFacilities.dto.UsersDto;
+import Expertkom.SportFacilities.model.Users;
 import org.springframework.stereotype.Component;
 
 @Component
-public class UserMapper {
-    public UserDto toDto(User user) {
-        UserDto userDto = new UserDto();
+public class UsersMapper {
+    public UsersDto toDto(Users user) {
+        UsersDto userDto = new UsersDto();
         userDto.setEmail(user.getUserEmail());
         userDto.setPassword(user.getPasswordHash());
         userDto.setUserId(user.getRoleId().getRoleId());
@@ -15,8 +15,8 @@ public class UserMapper {
         return userDto;
     }
 
-    public User toEntity(UserDto userDto) {
-        User user = new User();
+    public Users toEntity(UsersDto userDto) {
+        Users user = new Users();
 //        user.setEmail(userDto.getEmail());
         user.setPasswordHash(userDto.getPassword());
 //        user.setUserRole());

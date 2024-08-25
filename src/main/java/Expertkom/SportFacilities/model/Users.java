@@ -8,15 +8,13 @@ import org.hibernate.validator.constraints.Length;
 import org.springframework.format.annotation.DateTimeFormat;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotEmpty;
-import jakarta.validation.constraints.NotNull;
 
-import org.hibernate.engine.internal.Cascade;
 import java.util.Date;
 
 @Entity
 @Table(name = "users" )
 @Data
-public class User {
+public class Users {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int userId;
@@ -39,7 +37,7 @@ public class User {
 
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "roleId", referencedColumnName = "roleId")
-    private UserRole roleId;
+    private UserRoles roleId;
 
     @DateTimeFormat(pattern = "dd-MM-yyyy")
     private Date userCreatedAt;
@@ -47,7 +45,7 @@ public class User {
     @DateTimeFormat(pattern = "dd-MM-yyyy")
     private Date userUpdatedAt;
 
-   @NotBlank
+    @NotBlank
     @NotEmpty
     @Length
     @Size(max = 100)

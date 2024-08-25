@@ -1,11 +1,10 @@
 package Expertkom.SportFacilities.service;
 
-import Expertkom.SportFacilities.dto.UserDto;
+import Expertkom.SportFacilities.dto.UsersDto;
 import Expertkom.SportFacilities.dto.UserRegisterDto;
-import Expertkom.SportFacilities.model.User;
-import Expertkom.SportFacilities.model.UserRole;
-import Expertkom.SportFacilities.repository.UserRepository;
-import Expertkom.SportFacilities.repository.UserRoleRepository;
+import Expertkom.SportFacilities.model.Users;
+import Expertkom.SportFacilities.model.UserRoles;
+import Expertkom.SportFacilities.repository.UsersRepository;
 
 
 import lombok.extern.slf4j.Slf4j;
@@ -17,19 +16,19 @@ import java.util.List;
 
 @Service
 @Slf4j
-public class UserService {
-    private final UserRepository userRepository;
-    private final UserRoleService userRoleService;
-    private final UserMapper userMapper;
+public class UsersService {
+    private final UsersRepository userRepository;
+    private final UserRolesService userRoleService;
+    private final UsersMapper userMapper;
 
     @Autowired
-    public UserService(UserRepository userRepository, UserRoleService userRoleRepository, UserMapper userMapper) {
+    public UsersService(UsersRepository userRepository, UserRolesService userRolesService, UsersMapper userMapper) {
         this.userRepository = userRepository;
-        this.userRoleService = userRoleRepository;
+        this.userRoleService = userRolesService;
         this.userMapper = userMapper;
     }
 
-    public List<UserDto> getAll() {
+    public List<UsersDto> getAll() {
         /*List<UserDto> list = new ArrayList<>();
         for (User user : userRepository.findAll()){
             UserDto dto = userMapper.toDto(user);
@@ -41,9 +40,9 @@ public class UserService {
         return userRepository.findAll().stream().map(userMapper::toDto).toList();
     }
 
-    public User registrUser(UserRegisterDto userRegisterDto) {
+    public Users registrUser(UserRegisterDto userRegisterDto) {
         log.info("#US&ru01: registerUser called, userRegisterDto={}", userRegisterDto);
-        User user = new User();
+        Users user = new Users();
 
 
         user.setPasswordHash(userRegisterDto.getPassword());
@@ -54,7 +53,7 @@ public class UserService {
         user.setUserCity(userRegisterDto.getCity());
         user.setUserZipCode(userRegisterDto.getZipCode());
 
-        UserRole ur = userRoleService.getById(userRegisterDto.getRoleId());
+        UserRoles ur = userRoleService.getById(userRegisterDto.getRoleId());
         user.setRoleId(ur);
         user.setUserCreatedAt(new Date());
         user.setUserUpdatedAt(new Date());
